@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+/*Cabecalho*/
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+ .header {    
+	background: #BBBBBB;
+	padding: 20px 50px;
+    width: 100%;
+    min-height: 100vh;    
+    text-align: center;
+}
+
+.header-div {
+    width: 40%;
+    height: 40%;
+    margin: 100px auto;
+}
+
+.header-img {
+    width: 100%;
+}
+
+.header-ul {
+    position: fixed;
+    right: 60px;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header-li {
+    display: inline-block;
+    margin: 0 auto;
+    width: 90px;
+    text-align: center;
+}
+
+.header-link {
+    display: inline-block;
+    line-height: 30px;
+    width: 100%;
+    text-decoration: none;
+    transition: 0.8s;
+}
+
+.header-link:hover {
+    transform: scale(1.2);
+    background: #000000;    
+    color: #BBBBBB;
+}
+
+.header-link:active {
+    background: rgb(133, 132, 132);
+    color: #BBBBBB;
+}
+
+.header > a {
+    position: fixed;
+    right: 3em;
+    bottom: 1em;
+    transition: 1s all;
+    transform: rotate(90deg);
+}
+
+.header > a:hover {
+    transform: scale(1.5); 
+    transform: rotate(450deg);
+}
+
+
+/*para todas as secoes*/
+section {
+    width: 100%;
+    height: 100%;
+    padding: 50px 50px;
+}
+
+/*Sobre*/
+.sobre {
+    background: rgb(194, 164, 109);
+    text-align: center;
+    line-height: 2em;
+}
+
+.sobre h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+/*Projetos*/
+.projetos {
+    background: rgb(65, 65, 105);
+}
+
+/*Contato*/
+.contato {
+    background: rgb(253, 77, 77);
+}
+
+/*Rodape*/
+.footer {
+    padding: 40px;
+    background: url("../img/bg.jpg") repeat;
+    text-align: center;  
+}
+
+footer p {
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.footer > img {
+    width: 10%;
+    height: 10%;
+}
