@@ -13,14 +13,16 @@
     <main>
         <!-- Cabeçalho -->
         <header id="header" class="header">            
-            <nav class="header-nav">
-                <ul class="header-ul">
-                    <li class="header-li"><a class="header-link" href="#sobre">Sobre</a></li>
-                    <li class="header-li"><a class="header-link" href="#projetos">Projetos</a></li>                    
-                    <li class="header-li"><a class="header-link" href="#contato">Contato</a></li>
-                    <li class="header-li"><a class="header-link" href="#footer">Rodape</a></li>
-                </ul>
-            </nav>
+            <div class="header-menu-mobile">
+                <nav class="header-nav">
+                    <ul class="header-ul">
+                        <li class="header-li"><a class="header-link" href="#sobre">Sobre</a></li>
+                        <li class="header-li"><a class="header-link" href="#projetos">Projetos</a></li>
+                        <li class="header-li"><a class="header-link" href="#contato">Contato</a></li>
+                        <li class="header-li"><a class="header-link" href="#footer">Rodape</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="header-div">
                 <img class="header-img" src="img/me.png" alt="Logo do Lira">
             </div>
@@ -32,7 +34,7 @@
                             <g transform="translate(100.000000, 3378.000000)">
                                 <g transform="translate(476.000000, 54.000000)">
                                         <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
-                                        <path d="M19,11 L7.83,11 L12.71,6.12 C13.1,5.73 13.1,5.09 12.71,4.7 C12.32,4.31 11.69,4.31 11.3,4.7 L4.71,11.29 C4.32,11.68 4.32,12.31 4.71,12.7 L11.3,19.29 C11.69,19.68 12.32,19.68 12.71,19.29 C13.1,18.9 13.1,18.27 12.71,17.88 L7.83,13 L19,13 C19.55,13 20,12.55 20,12 C20,11.45 19.55,11 19,11 Z" id="🔹-Icon-Color" fill="#1D1D1D"></path>
+                                        <path d="M19,11 L7.83,11 L12.71,6.12 C13.1,5.73 13.1,5.09 12.71,4.7 C12.32,4.31 11.69,4.31 11.3,4.7 L4.71,11.29 C4.32,11.68 4.32,12.31 4.71,12.7 L11.3,19.29 C11.69,19.68 12.32,19.68 12.71,19.29 C13.1,18.9 13.1,18.27 12.71,17.88 L7.83,13 L19,13 C19.55,13 20,12.55 20,12 C20,11.45 19.55,11 19,11 Z"></path>
                                 </g>
                             </g>
                         </g>
@@ -44,10 +46,10 @@
             <article>
                 <h1>Um pouco sobre mim</h1>
                 <p>Profissional de tecnologia há 5 anos tendo atuado no setor público e privado. Estou em constante desenvolvimento pessoal e profissional.</p>
-                <p>Busco uma oportunidade para atuar como analista de sistemas e pôr em prática as habilidades que estou adquirindo.
+                <p>Busco uma oportunidade para atuar como analista de sistemas e pôr em prática as habilidades que estou adquirindo.</p>
                 <p>Minhas habilidades comportamentais são: <em>comprometimento, resiliência e facilidade em aprender.</em></p>
-                    Na minha trajetória profissional atuei em solução de problemas de rede, virtualização, atendimento a usuários e implantação de servidores.
-                    Estou cursando Análise e Desenvolvimento de Sistemas, e estudando por conta a linguagem de programação <strong>Java para Back-End e para o Front-End, HTML5 e CSS3.</strong>
+                <p>Na minha trajetória profissional atuei em solução de problemas de rede, virtualização, atendimento a usuários e implantação de servidores.</p>
+                <p>Estou cursando Análise e Desenvolvimento de Sistemas, e estudando por conta a linguagem de programação <strong>Java para Back-End e para o Front-End, HTML5 e CSS3.</strong>
                 </p>
             </article>
         </section>
@@ -63,31 +65,36 @@
 
         <!-- Contato -->
         <section id="contato" class="contato">
+            <h1>Entre em contato:</h1>
             <form action="" method="POST">
-                <label for="nomesobrenome">Nome e sobrenome</label>
-				<input type="text" id="nomesobrenome" class="input-padrao" required>
+                <fieldset>
+                    <label for="nomesobrenome">Nome e sobrenome</label>
+                    <input type="text" id="nomesobrenome" class="input-padrao" required>
 
-				<label for="email">Email</label>
-				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
-				<label for="telefone">Telefone</label>
-				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
-				<label for="mensagem">Mensagem</label>
-				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
-
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                </fieldset>
 				<fieldset>
-					<legend>Como prefere o nosso contato?</legend>
+					<legend>Como prefere o meu contato?</legend>
 					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
 					
 					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
 					
 					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+                    <input type="submit" value="Enviar">
 				</fieldset>
             </form>
         </section>
         <footer id="footer" class="footer">
-            <img src="img/branco.png">
+            <div>
+                <img src="img/branco.png">
+            </div>
 			<p class="copyright">&copy; Copyright Cleverson Lira - 2021</p>
         </footer>
     </main>
