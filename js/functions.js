@@ -1,10 +1,3 @@
-var myHeaders = new Headers();
-
-myHeaders.set('Content-Type', 'text/html');
-myHeaders.append('Content-Type', 'application/javascript');
-myHeaders.append('Content-Type', 'charset=utf-8');
-
-
 const buttonMenuMobile = document.querySelector('.button-menu-mobile');
 
 function toggleMenu() {
