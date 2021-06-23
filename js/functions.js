@@ -20,4 +20,5 @@ function closeMenu() {
     const nav = document.querySelector('.header-nav');
     console.log('entrou na closeMenu');
     nav.classList.remove('active');
+    document.querySelector('.button-menu-mobile').innerHTML='|||';
 }
