@@ -1,4 +1,5 @@
 const buttonMenuMobile = document.querySelector('.button-menu-mobile');
+buttonMenuMobile.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
     const nav = document.querySelector('.header-nav');
@@ -12,4 +13,12 @@ function toggleMenu() {
     }
 }
 
-buttonMenuMobile.addEventListener('click', toggleMenu);
+
+let arrayLinkMenu = document.querySelectorAll('.header-link');
+arrayLinkMenu.forEach(a => a.addEventListener('click', closeMenu));
+
+function closeMenu() {
+    const nav = document.querySelector('.header-nav');
+    console.log('entrou na closeMenu');
+    nav.classList.remove('active');
+}

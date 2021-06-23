@@ -46,27 +46,27 @@ h1 {
     display: none;
 }
 
+.header-ul {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 1em;
+}
+
 .header-ul li {
-    display: inline;
+    display: inline-block;
+    margin-left: 20px;
 }
 
 .button-menu-mobile {
-    border: none;
-    background: transparent;
-    position: fixed;
-    right: 5px;
-    top: 5px;
-    font-weight: bold;
-    font-size: 1.5em;
-    transform: rotate(90deg);
-    width: 20px;
     display: none;
 }
 
 .header-div {
     width: 300px;
-    height: 300px;
+    height: 600px;
     margin: auto auto;
+    padding-top: 200px;
 }
 
 .header-img {
@@ -83,15 +83,18 @@ h1 {
 .header-link {
     display: inline-block;
     line-height: 30px;
-    width: 100%;
+    width: 100px;
     text-decoration: none;
+    font-weight: bold;
+    color: #bbb;
     transition: 0.8s;
-    border-bottom: solid 1px #FFFFFF;
+    border-radius: 5px;
+    border: solid 1px #FFFFFF;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .header-link:hover {
-    transform: scale(1.05);
-    border-radius: 5px;
+    transform: scale(1.05);    
     background: #000000;    
     color: #BBBBBB;
 }
@@ -231,22 +234,41 @@ footer p {
     .button-menu-mobile {
         position: fixed;
         display: block;
-        left: 0.5em;
+        left: 0.2em;
         top: 1em;
         background-color: transparent;
         border: none;
         font-size: 1.5em;
         font-weight: bold;
-        transform: rotate(90deg);
+        transform: rotate(90deg);       
+        transition: .3s all;
+    }
+    
+    .active #button-menu-mobile {
+        transform: rotate(-270deg);  
     }
 
     .header-ul {        
         display: none;
     }
 
+
     .active .header-ul {
         display: block;
+        width: 75%;
+        left: 1.5em;
+        margin: 0 auto;
         position: absolute;
+        background: transparent;
+    }
+
+    .header-ul > li {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .header-link {
+        width: 100%;
     }
 
     .header-div {
