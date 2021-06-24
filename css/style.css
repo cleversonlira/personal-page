@@ -3,7 +3,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: #f7f7f7;
 }
 
 main {
@@ -17,7 +17,8 @@ main {
 
 /*para todas as secoes*/
 section {
-    /* border-bottom: solid 0.25em #000000; */
+    background-image: linear-gradient(#1C3254, #1999F5, #1C3254);
+    border-bottom: solid 0.25em #000000;
 }
 
 section {
@@ -39,7 +40,6 @@ h1 {
     width: 100%;
     height: 100vh;    
     text-align: center;
-    background-image: linear-gradient(#f7BBBB, #BBB, gray);
 }
 
 .button-menu-mobile {
@@ -72,7 +72,7 @@ h1 {
 .header-img {
     width: 100%;
     margin: 0 auto;
-    transition: 1.5s;
+    transition: 1s;
 }
 
 .header-img:hover {
@@ -83,19 +83,21 @@ h1 {
 .header-link {
     display: inline-block;
     line-height: 30px;
-    width: 100px;
+    min-width: 100px;
     text-decoration: none;
     font-weight: bold;
-    color: #bbb;
+    color: #F7F7F7;
     transition: 0.3s;
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.4);
+    padding: 0 15px;
 }
 
 .header-link:hover {
+    font-weight: bold;
     transform: scale(1.05);    
     background: #000000;    
-    color: #BBBBBB;
+    color: #F7F7F7;
 }
 
 .header-link:active {
@@ -122,7 +124,6 @@ h1 {
 
 /*Sobre*/
 .sobre {
-    background-image: linear-gradient(gray, #BBB, #f7BBBB);
     text-align: center;
     line-height: 2em;
 }
@@ -147,12 +148,11 @@ h1 {
 
 /*Projetos*/
 .projetos {
-    background-image: linear-gradient(#f7BBBB, #BBB, gray);
+    /* background-image: linear-gradient(#f7BBBB, #BBB, gray); */
 }
 
 /*Contato*/
 .contato {
-    background-image: linear-gradient(gray, #BBB, #f7BBBB);
     text-align: center;
 }
 
@@ -193,7 +193,7 @@ h1 {
     line-height: 30px;
     text-decoration: none;
     font-weight: bold;
-    color: #bbb;
+    color: #F7F7F7;
     transition: 0.8s;
     border-radius: 5px;
     border: solid 1px #FFFFFF;
@@ -204,7 +204,7 @@ h1 {
 .contato .button-submit:hover {
     transform: scale(1.05);    
     background: #000000;    
-    color: #BBBBBB;
+    color: #F7F7F7;
 }
 
 #send-whatsapp, #send-whatsapp {
@@ -233,6 +233,11 @@ footer > p, li {
     margin-top: 10px;
 }
 
+#footer-icon:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
 footer li {
     display: inline;
     margin-left: 0.5em;
@@ -254,6 +259,15 @@ footer li {
         padding: 1.8em 1em;
     }
 
+    .opacity {
+        transition: 0.8s;
+        opacity: 0.15;
+    }
+
+    img:not(.opacity) {
+        transition: 0.8s;
+    }
+
     /*header*/
     .button-menu-mobile {
         position: fixed;
@@ -266,6 +280,7 @@ footer li {
         font-weight: bold;
         transform: rotate(90deg);       
         transition: .3s all;
+        color: #FFF;
     }
     
     .active #button-menu-mobile {
@@ -284,6 +299,7 @@ footer li {
         margin: 0 auto;
         position: absolute;
         background: transparent;
+        z-index: 1000;
     }
 
     .header-ul > li {
@@ -293,6 +309,8 @@ footer li {
     
     .header-link {
         width: 100%;
+        border: #FFF solid 0.01em;
+        line-height: 3em;
     }
 
     .header-div {
