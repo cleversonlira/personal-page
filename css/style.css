@@ -352,6 +352,8 @@ footer li {
     
     .contato textarea {
         height: 10em;
+        background: transparent;
+        border: #FFF solid 0.01em;
     }
 
 
