@@ -6,23 +6,36 @@ buttonMenuMobile.addEventListener('click', toggleMenu);
 function toggleMenu() {
     const nav = document.querySelector('.header-nav');
     nav.classList.toggle('active');
+    document.querySelectorAll("img").forEach(img =>
+        img.classList.toggle("opacity")
+    );
+    
     
     if(!nav.classList.contains('active')) {
         buttonMenuMobile.innerHTML='|||';
+        //document.querySelector("#header-img").classList.remove("opacity");
     } else {
         buttonMenuMobile.innerHTML='&#10005';
+        //document.querySelector("#header-img").classList.add("opacity");
     }
 }
 
 //para todos os links, caso clicado, chamo o closeMenu.
-let arrayLinkMenu = document.querySelectorAll('.header-link');
-arrayLinkMenu.forEach(a => a.addEventListener('click', closeMenu));
+let arrayLinkMenu = document.querySelectorAll('a');
+arrayLinkMenu.forEach(a => {
+    if(!(a.id === 'back')) {
+        a.addEventListener('click', closeMenu);
+    }
+});
 
 //remove a classe active do nav, fechando então o menu e voltando ao ícone de hamburguer.
 function closeMenu() {
     const nav = document.querySelector('.header-nav');
     console.log('entrou na closeMenu');
     nav.classList.remove('active');
+    document.querySelectorAll("img").forEach(img =>
+        img.classList.toggle("opacity")
+    );
     document.querySelector('.button-menu-mobile').innerHTML='|||';
 }
 
