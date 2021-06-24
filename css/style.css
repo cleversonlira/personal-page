@@ -17,7 +17,7 @@ main {
 
 /*para todas as secoes*/
 section {
-    border-bottom: solid 0.25em #000000;
+    /* border-bottom: solid 0.25em #000000; */
 }
 
 section {
@@ -50,7 +50,7 @@ h1 {
     position: absolute;
     width: 100%;
     left: 0;
-    top: 1em;
+    top: 0;
 }
 
 .header-ul li {
@@ -87,10 +87,9 @@ h1 {
     text-decoration: none;
     font-weight: bold;
     color: #bbb;
-    transition: 0.8s;
+    transition: 0.3s;
     border-radius: 5px;
-    border: solid 1px #FFFFFF;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .header-link:hover {
@@ -123,7 +122,7 @@ h1 {
 
 /*Sobre*/
 .sobre {
-    background: rgb(194, 164, 109);
+    background-image: linear-gradient(gray, #BBB, #f7BBBB);
     text-align: center;
     line-height: 2em;
 }
@@ -148,16 +147,17 @@ h1 {
 
 /*Projetos*/
 .projetos {
-    background: rgb(65, 65, 105);
+    background-image: linear-gradient(#f7BBBB, #BBB, gray);
 }
 
 /*Contato*/
 .contato {
-    background: rgb(253, 77, 77);
+    background-image: linear-gradient(gray, #BBB, #f7BBBB);
     text-align: center;
 }
 
-.contato label, input, textarea, legend {
+.contato label, textarea, legend {
+    font-weight: bold;
     text-align: left;
     display: block;
     width: 100%;
@@ -188,19 +188,37 @@ h1 {
 }
 
 .contato .button-submit {
-    background: transparent;
-    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 30px;
+    text-decoration: none;
     font-weight: bold;
-    text-transform: uppercase;
+    color: #bbb;
     transition: 0.8s;
-    border: none;
-    border-bottom: solid 1px #FFFFFF;
+    border-radius: 5px;
+    border: solid 1px #FFFFFF;
+    background: rgba(0, 0, 0, 0.5);
+    width: 49%;
 }
 
 .contato .button-submit:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);    
     background: #000000;    
     color: #BBBBBB;
+}
+
+#send-whatsapp, #send-whatsapp {
+    margin: 0;
+}
+
+#send-whatsapp::before {
+    font-size: 1em;
+    content: url(../img/whatsapp.svg) ' ';
+}
+
+#send-email::before {
+    font-size: 1em;
+    content: url(../img/mail-before.svg) ' ';
 }
 
 /*Rodape*/
@@ -210,9 +228,15 @@ h1 {
     text-align: center;  
 }
 
-footer p {
+footer > p, li {
     color: #FFFFFF;
     margin-top: 10px;
+}
+
+footer li {
+    display: inline;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 .footer > div {

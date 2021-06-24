@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/branco.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/me.png" type="image/x-icon">
     <title>Lira</title>
 </head>
 <body>
@@ -67,40 +67,24 @@
         <!-- Contato -->
         <section id="contato" class="contato">
             <h1>Entre em contato:</h1>
-            <form action="" method="POST">
-                <fieldset>
-                    <label for="nomesobrenome">Nome e sobrenome</label>
-                    <input type="text" id="nomesobrenome" class="input-padrao" required>
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
-
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
-
-                    <label for="mensagem">Mensagem</label>
-                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
-                </fieldset>
+            <form>
 				<fieldset>
-					<legend>Como prefere o meu contato?</legend>
-					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
-					
-					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
-					
-					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
-                    <input class="button-submit" type="submit" value="Enviar">
+                    <textarea cols="70" rows="10" id="message" class="input-padrao" placeholder="Ex: Olá Cleverson, me chamo João ..." required></textarea>
+					<legend>Envie uma mensagem via WhatssApp ou E-Mail&#128522;</legend>
+                    <button id="send-whatsapp" class="button-submit" type="submit">Whats App</button>
+                    <button id="send-email" class="button-submit" type="submit">E-Mail</button>
 				</fieldset>
             </form>
         </section>
         <footer id="footer" class="footer">
             <ul>
-                <li><a href="">Github</a></li>
-                <li><a href=""></a>LinkedIn</li>
-                <li><a href=""></a>E-Mail</li>
-                <li><a href=""></a>WhatsApp</li>
+                <li><a href="https://github.com/cleversonlira/" target="_blank"><img src="img/github.svg"></a></li>
+                <li><a href="https://www.linkedin.com/in/cleversonlira/" target="_blank"><img src="img/linkedin.svg"></a></li>
+                <li><a href="11982428106" target="_blank"><img src="img/cellphone.svg"></a></li>
+                <li><a href="mailto:cleverson_lira@outlook.com" target="_blank"><img src="img/mail.svg"></a></li>                
             </ul>
             <div>
-                <img src="img/branco.png">
+                <img src="img/me-branco.png">
             </div>
 			<p class="copyright">&copy; Copyright Cleverson Lira - 2021</p>
         </footer>
