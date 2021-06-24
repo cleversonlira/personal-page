@@ -42,7 +42,7 @@ function sendRedirect(textareaMessage, tipo) {
     let url;
     if(!(textareaMessage === '')) {            
         if(tipo === 'whatsapp') {
-            url = `https://web.whatsapp.com/send?phone=5511982428106&text=${textareaMessage}`;
+            url = `https://api.whatsapp.com/send?phone=5511982428106&text=${textareaMessage}`;
         } else {
             url = `mailto:cleverson_lira@outlook.com?subject=Insira um assunto&body=${textareaMessage}`;
         }
