@@ -61,6 +61,6 @@ function sendRedirect(textareaMessage, tipo) {
         }
         setTimeout(function() {             
             window.open(url, '_blank');
-        },0001);
+        },0700);
     }
 }
