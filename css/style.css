@@ -255,22 +255,17 @@ footer li {
 
 @media screen and (max-width: 480px) {
     /*config para todas as secoes*/
+    main {
+        scroll-behavior: auto;
+    }
+    
     section, footer {
         padding: 1.8em 1em;
     }
 
-    .opacity {
-        transition: 0.8s;
-        opacity: 0.15;
-    }
-
-    img:not(.opacity) {
-        transition: 0.8s;
-    }
-
     /*header*/
     .button-menu-mobile {
-        position: fixed;
+        position: absolute;
         display: block;
         left: 0.2em;
         top: 0.2em;
@@ -281,6 +276,7 @@ footer li {
         transform: rotate(90deg);       
         transition: .3s all;
         color: #FFF;
+        z-index: 2;
     }
     
     .active #button-menu-mobile {
@@ -289,22 +285,21 @@ footer li {
 
     .header-ul {        
         display: none;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        padding-top: 3em;
     }
 
-
     .active .header-ul {
-        display: block;
-        width: 75%;
-        left: 1.5em;
-        margin: 0 auto;
+        display: block;      
         position: absolute;
-        background: transparent;
-        z-index: 1000;
+        z-index: 1;
     }
 
     .header-ul > li {
         display: inline-block;
         width: 100%;
+        margin: 0 auto;
     }
     
     .header-link {
@@ -324,7 +319,11 @@ footer li {
 
     /*sobre*/
     .sobre {
-        height: 120%;
+        height: 100%;        
+    }
+
+    .sobre p {
+        font-size: 0.8em
     }
 
     .sobre h1 {

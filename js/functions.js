@@ -6,17 +6,11 @@ buttonMenuMobile.addEventListener('click', toggleMenu);
 function toggleMenu() {
     const nav = document.querySelector('.header-nav');
     nav.classList.toggle('active');
-    document.querySelectorAll("img").forEach(img =>
-        img.classList.toggle("opacity")
-    );
-    
     
     if(!nav.classList.contains('active')) {
         buttonMenuMobile.innerHTML='|||';
-        //document.querySelector("#header-img").classList.remove("opacity");
     } else {
         buttonMenuMobile.innerHTML='&#10005';
-        //document.querySelector("#header-img").classList.add("opacity");
     }
 }
 
