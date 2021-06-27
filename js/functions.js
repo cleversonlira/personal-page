@@ -33,6 +33,9 @@ function closeMenu() {
     document.querySelector('.button-menu-mobile').innerHTML='|||';
 }
 
+
+
+
 //Ao ser clicado o botão de enviar mensagem, chama o redirecionamento para whatsapp.
 document.querySelector('#send-whatsapp').addEventListener('click', function () {
     const textareaMessage = document.querySelector('#message').value;    
