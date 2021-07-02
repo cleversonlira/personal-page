@@ -215,6 +215,7 @@ h1 {
 }
 .contato textarea {
     resize: none;
+    background-color: transparent;
 }
 
 .contato input {
