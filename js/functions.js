@@ -14,7 +14,7 @@ function toggleMenu() {
     }
 }
 
-//para todos os links, caso clicado, chamo o closeMenu.
+//para todos os links, caso clicado, chama o closeMenu.
 let arrayLinkMenu = document.querySelectorAll('a');
 arrayLinkMenu.forEach(a => {
     if(!(a.id === 'back')) {
