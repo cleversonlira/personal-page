@@ -1,13 +1,12 @@
 # Cleverson Lira
 **Desenvolvedor Back-End Java**  
-📧 cleversonslira@gmail.com | 📞 (11) 98242-8106 | 📍 Taboão da Serra - SP  
+📧 cleversonslira@gmail.com | 📞 (11) 98242-8106 | 📍 SP  
 🔗 [LinkedIn](https://www.linkedin.com/in/cleversonlira/) | 🌐 [Site Pessoal](https://cleversonlira.github.io/personal-page/)
-
 ---
 
 ## 🎯 Objetivo
-Impactar positivamente as pessoas por meio da tecnologia, desenvolvendo, corrigindo e melhorando softwares. Contribuir para o sucesso da empresa utilizando minhas habilidades.
-
+Impactar positivamente as pessoas por meio da tecnologia, desenvolvendo, corrigindo e melhorando softwares. 
+Contribuir para o sucesso da empresa da qual faço parte.
 ---
 
 ## 💼 Experiência Profissional
@@ -20,29 +19,22 @@ Impactar positivamente as pessoas por meio da tecnologia, desenvolvendo, corrigi
 - Suporte a equipes de implantação.
 - Mentoria e pair programming.
 
-### Desenvolvedor Back-End Júnior – Hipcom ERP *(Jan/2022 – Jan/2023)*
+### Desenvolvedor Back-End Júnior – Hipcom ERP *(Out/2021 – Jan/2023)*
 - Sustentação e evolução de sistema ERP.
 - Desenvolvimento de integrações.
 - Integração com hardware.
-
-### Estagiário Back-End – Hipcom ERP *(Out/2021 – Jan/2022)*
-- Integração com software CRM parceiro.
-- Desenvolvimento de ETL para migração de dados.
-
 ---
 
 ## 🎓 Educação
 - **Pós-graduação:** Arquitetura de Software – FIAP *(Em andamento)*
 - **Tecnólogo:** Análise e Desenvolvimento de Sistemas – Faculdade Impacta *(Conclusão: 2022)*
-
 ---
 
 ## 🧠 Habilidades
-- **Java:** JavaFX, Servlets, JSP, Spring Boot, Quarkus  
+- **Java:** Spring Boot, Quarkus, JavaFX, Servlets, JSP
 - **Web:** JavaScript, HTML, CSS  
 - **Bases de Dados:** MySQL, SQLite  
-- **Ambientes:** Linux, Shell Script
-
+- **Ambientes:** Linux e Windows
 ---
 
 ## 👨‍💻 Sobre Mim
